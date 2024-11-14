@@ -15,8 +15,8 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.enable=false"
     volumes:
-      - ${ARRPATH}config/qbittorrent:/config
-      - ${ARRPATH}mediaLibrary/downloads:/downloads
+      - ${ARRPATH}config/qbittorrent:/config:rw 
+      - ${ARRPATH}mediaLibrary/downloads:/downloads:rw 
     ports:
       - 8080:8080
       - 6881:6881
