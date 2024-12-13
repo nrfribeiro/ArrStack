@@ -330,13 +330,14 @@ services:
       - ${FOLDER_FOR_DATA:?err}/radarr:/config
       - ${FOLDER_FOR_MEDIA:?err}:/data
     ports:
-      - "${WEBUI_PORT_RADARR:?err}:7878"
+      - "${WEBUI_PORT_RADARR:?err}:8200"
     environment:
       - PUID=${PUID:?err}
       - PGID=${PGID:?err}
       - TZ=${TIMEZONE:?err}
       - DOCKER_MODS=ghcr.io/themepark-dev/theme.park:radarr
       - TP_THEME=${TP_THEME:?err}
+      - WEBUI_PORT=8200
     networks:
       - mediastack
 
