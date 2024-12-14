@@ -294,7 +294,7 @@ services:
 ###########################################################################
 ###########################################################################
   qbittorrent:
-    image: lscr.io/linuxserver/qbittorrent:latest
+    image: lscr.io/linuxserver/qbittorrent:25.09.18
     container_name: qbittorrent
     restart: unless-stopped
     volumes:
