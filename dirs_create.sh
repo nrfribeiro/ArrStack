@@ -1,5 +1,5 @@
-export FOLDER_FOR_MEDIA=/ArrStack/media     # Change to where you want your media to be stored
-export FOLDER_FOR_DATA=/ArrStack/data         # Change to where you want your container configurations to be stored
+export FOLDER_FOR_MEDIA=/ArrStack/media
+export FOLDER_FOR_DATA=/ArrStack/data
 
 export PUID=1000
 export PGID=995
