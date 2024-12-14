@@ -308,7 +308,8 @@ services:
       - WEBUI_PORT=${WEBUI_PORT_QBITTORRENT:?err}
       - DOCKER_MODS=ghcr.io/themepark-dev/theme.park:qbittorrent
       - TP_THEME=${TP_THEME:?err}
-
+    networks:
+      - mediastack
 
 ###########################################################################
 ###########################################################################
