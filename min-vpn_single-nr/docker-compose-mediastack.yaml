@@ -302,6 +302,7 @@ services:
       - ${FOLDER_FOR_MEDIA:?err}:/data
     ports:
       - "${WEBUI_PORT_QBITTORRENT:?err}:8200"
+      - 6881:6881
     environment:
       - PUID=${PUID:?err}
       - PGID=${PGID:?err}
