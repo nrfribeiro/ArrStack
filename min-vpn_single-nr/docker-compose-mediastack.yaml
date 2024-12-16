@@ -288,25 +288,6 @@ services:
 
 
 
-  deluge:
-    image: lscr.io/linuxserver/deluge:latest
-    container_name: deluge
-    environment:
-      - PUID=${PUID:?err}
-      - PGID=${PGID:?err}
-      - TZ=${TIMEZONE:?err}
-      - DELUGE_LOGLEVEL=error #optional
-    volumes:
-      - ${FOLDER_FOR_DATA:?err}/deluge:/config
-      - ${FOLDER_FOR_MEDIA:?err}:/data
-    ports:
-      - 8112:8112
-      - 6882:6881
-      - 6882:6881/udp
-      - 58846:58846 #optional
-    restart: unless-stopped
-    networks:
-      - mediastack
 ###########################################################################
 ###########################################################################
 ##
