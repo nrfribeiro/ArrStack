@@ -334,7 +334,7 @@ services:
       - UN_SONARR_0_DELETE_ORIG=false
       - UN_SONARR_0_DELETE_DELAY=5m
       # Radarr Config - Copy API Key from: http://radarr:7878/general/settings
-      - UN_RADARR_0_URL=http://radarr:7878
+      - UN_RADARR_0_URL=http://192.168.1.3:7878
       - UN_RADARR_0_API_KEY=334343b712524b6799d25d23138df0f1
       - UN_RADARR_0_PATHS_0=/data/torrents/movies
       - UN_RADARR_0_PROTOCOLS=torrent
@@ -350,7 +350,7 @@ services:
       - UN_LIDARR_0_DELETE_ORIG=false
       - UN_LIDARR_0_DELETE_DELAY=5m
       # Readarr Config - Copy API Key from: http://readarr:8787/general/settings
-      - UN_READARR_0_URL=http://readarr:8787
+      - UN_READARR_0_URL=http://192.168.1.3:8787
       - UN_READARR_0_API_KEY=
       - UN_READARR_0_PATHS_0=/data/torrents/books
       - UN_READARR_0_PROTOCOLS=torrent
