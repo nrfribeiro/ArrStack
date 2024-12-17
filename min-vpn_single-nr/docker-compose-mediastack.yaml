@@ -326,7 +326,7 @@ services:
       - UN_DIR_MODE=0775
       # Sonarr Config - Copy API Key from: http://sonarr:8989/general/settings
       - UN_SONARR_0_URL=http://sonarr:8989
-      - UN_SONARR_0_API_KEY=
+      - UN_SONARR_0_API_KEY=0a3d1a37c59141f3aab09bd44ae1bfd3
       - UN_SONARR_0_PATHS_0=/data/torrents/anime
       - UN_SONARR_0_PATHS_1=/data/torrents/tv
       - UN_SONARR_0_PROTOCOLS=torrent
@@ -335,7 +335,7 @@ services:
       - UN_SONARR_0_DELETE_DELAY=5m
       # Radarr Config - Copy API Key from: http://radarr:7878/general/settings
       - UN_RADARR_0_URL=http://radarr:7878
-      - UN_RADARR_0_API_KEY=
+      - UN_RADARR_0_API_KEY=334343b712524b6799d25d23138df0f1
       - UN_RADARR_0_PATHS_0=/data/torrents/movies
       - UN_RADARR_0_PROTOCOLS=torrent
       - UN_RADARR_0_TIMEOUT=10s
